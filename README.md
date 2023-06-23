@@ -13,10 +13,15 @@ The CRUD application provides a user-friendly interface and a seamless experienc
 
 ## API Endpoints
 1.`POST /api/register`- User registration endpoint
-2.`POST /api/login`- User login endpoint 
+
+2.`POST /api/login`- User login endpoint
+
 3.`POST /api/posts`- Create a new post
+
 4.`GET /api/posts`- Retrieve all posts
+
 5.`PATCH /api/posts/:id`- Update a post
+
 6.`DELETE /api/posts/:id`- Delete a post
 
 ## Getting Started
