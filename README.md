@@ -29,3 +29,13 @@ How to start locally
 
 4.Start the backend development server: `npm run server`
 
+## Login Page
+![image](https://github.com/soniadiwedi/crud_app/assets/112754761/a9ac7e96-c58c-4a96-9022-5be909345593)
+
+## SignUP Page
+![image](https://github.com/soniadiwedi/crud_app/assets/112754761/182104e0-0e30-4c26-9bdc-8769a93dae05)
+
+## Post Page
+![image](https://github.com/soniadiwedi/crud_app/assets/112754761/b845d395-2cb8-447c-9f18-729b4655f450)
+
+
