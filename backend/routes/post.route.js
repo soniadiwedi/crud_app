@@ -1,9 +1,10 @@
 const express=require("express")
-const { PostModel } = require("../model/post.model")
+const { PostModel } = require("../model/post.model");
+const auth = require("../middleware/authMiddleware");
 const postRouter=express.Router()
 
 
-postRouter.post("/create",async(req,res)=>{
+postRouter.post("/create",auth,async(req,res)=>{
     try {
         const { img, title, description, sub, userID } = req.body;
         const newPost = new PostModel({
@@ -23,7 +24,7 @@ postRouter.post("/create",async(req,res)=>{
       }
 })
 
-postRouter.get("/",async(req,res)=>{
+postRouter.get("/",auth,async(req,res)=>{
     //logic
     try{
         let data= await PostModel.find()
@@ -33,7 +34,7 @@ postRouter.get("/",async(req,res)=>{
     }
 })
 
-postRouter.delete("/delete/:id",async(req,res)=>{
+postRouter.delete("/delete/:id",auth,async(req,res)=>{
     //logic
     const {id}=req.params
     try{
@@ -45,7 +46,7 @@ postRouter.delete("/delete/:id",async(req,res)=>{
 })
 
 
-postRouter.patch("/update/:id",async(req,res)=>{
+postRouter.patch("/update/:id",auth,async(req,res)=>{
     //logic
     const {id}=req.params
     const data=req.body
