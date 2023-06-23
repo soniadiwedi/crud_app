@@ -4,16 +4,25 @@ const postRouter=express.Router()
 
 
 postRouter.post("/create",async(req,res)=>{
-    const {img,title,body,subject}=req.body
-    try{
-        let post=new PostModel({img,title,body,subject})
-        await post.save();
-        res.status(201).send({"msg":"a New post has been added",post})
-
-    }catch(err){
-        res.status(400).send({"msg":err.msg})
-
-    }
+    try {
+        const { img, title, description, sub, userID } = req.body;
+    
+        
+        const newPost = new PostModel({
+          img,
+          title,
+          description,
+          sub,
+          userID
+        });
+    
+      
+        const savedPost = await newPost.save();
+    
+        res.status(201).json(savedPost);
+      } catch (error) {
+        res.status(500).json({ message: 'Something went wrong', error });
+      }
 })
 
 postRouter.get("/",async(req,res)=>{
