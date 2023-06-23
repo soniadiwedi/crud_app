@@ -10,3 +10,15 @@ Users can view all the posts available in the application and read their content
 Additionally, users have the option to delete their own posts if they no longer wish to keep them. Upon deletion, the post is permanently removed from the application.
 
 The CRUD application provides a user-friendly interface and a seamless experience for managing posts, allowing users to create, read, update, and delete their own posts efficiently.
+
+## API Endpoints
+1.`POST /api/register`- User registration endpoint
+2.`POST /api/login`- User login endpoint 
+3.`POST /api/posts`- Create a new post
+4.`GET /api/posts`- Retrieve all posts
+5.`PATCH /api/posts/:id`- Update a post
+6.`DELETE /api/posts/:id`- Delete a post
+
+## Getting Started
+How to start locally 
+1.Clone the repository: git clone `https://github.com/your-username/project-name.git`
