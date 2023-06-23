@@ -6,8 +6,6 @@ const postRouter=express.Router()
 postRouter.post("/create",async(req,res)=>{
     try {
         const { img, title, description, sub, userID } = req.body;
-    
-        
         const newPost = new PostModel({
           img,
           title,
