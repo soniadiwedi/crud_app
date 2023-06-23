@@ -21,4 +21,11 @@ The CRUD application provides a user-friendly interface and a seamless experienc
 
 ## Getting Started
 How to start locally 
-1.Clone the repository: git clone `https://github.com/your-username/project-name.git`
+1.Clone the repository: git clone `https://github.com/soniadiwedi/crud_app.git`
+
+2.Install the dependencies: `npm install`
+
+3.Start the frontend development server: `npm run start`
+
+4.Start the backend development server: `npm run server`
+
